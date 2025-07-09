@@ -9,7 +9,7 @@ nest_asyncio.apply()
 async def main():
     url = "https://interiorai.com/interior-designs/modern-style-fitness-gym-interior-with-dumbbell-stand-and-squat-rack-and-bench-177516"
     batch_size = 5
-    batch_start = 27  # Resume from here
+    batch_start = 27  
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True, args=["--no-sandbox"])
